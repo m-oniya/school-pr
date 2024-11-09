@@ -253,21 +253,19 @@ body {
         background-size: cover;
     }
 
-    /* Картки з перевагами */
     .benefit-cards {
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
 
-    /* Популярні трави */
+
     .herb-grid {
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
 
-    /* Картки трав */
     .herb-card {
         width: 90%;
         text-align: center;
@@ -278,13 +276,13 @@ body {
         height: auto;
     }
 
-    /* Мобільне меню */
+
     .mobile-nav {
         flex-direction: column;
         align-items: center;
     }
 
-    /* Кнопка */
+
     .button {
         width: 100%;
         max-width: 200px;
