@@ -10,50 +10,156 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="img/logo.png" alt="Логотип" />
-                <span>Лікарські трави</span>
+                <img class="logo" src="./photo_2024-11-09_19-37-54-removebg-preview.png" alt="Логотип" />
             </div>
             <nav class="nav">
                 <a href="index.html">Головна</a>
                 <a href="shop.html">Магазин</a>
                 <a href="contact.html">Контакти</a>
+                    <button id="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zM7.25 6l1.1 2h8.3l1.3-3H5.5L4.6 3H2v2h1.6l3.7 8 1.1-2H17V6H7.25z"/>
+                        </svg>
+                        <span id="cart-count">0</span>
+                    </button>
             </nav>
         </div>
     </header>
 
     <main class="main">
-        <section class="product-grid">
-            <div class="container">
-                <h2>Магазин лікарських трав</h2>
-                <div class="grid">
-                    <div class="product-card">
-                        <img src="img/herb1.jpg" alt="Ромашка">
-                        <h3>Ромашка</h3>
-                        <p>Ціна: 100 грн</p>
-                        <button>Додати до кошика</button>
-                    </div>
-                    <div class="product-card">
-                        <img src="img/herb2.jpg" alt="Чебрець">
-                        <h3>Чебрець</h3>
-                        <p>Ціна: 150 грн</p>
-                        <button>Додати до кошика</button>
-                    </div>
-                    <div class="product-card">
-                        <img src="img/herb3.jpg" alt="Календула">
-                        <h3>Календула</h3>
-                        <p>Ціна: 120 грн</p>
-                        <button>Додати до кошика</button>
-                    </div>
-                    <!-- Додайте ще кілька товарів -->
+          <div class="card-grid" id="cardGrid">
+            <div class="card-grid-container">
+                <div class="card" data-price="200" data-name="Лікарські трави">
+                    <img class="card-img" src="https://content.apteka-ds.com.ua/images/system/tips/avatars/000/000/051/medium/%D0%BB%D1%96%D0%BA%D0%B0%D1%80%D1%81%D1%8C%D0%BA%D1%96_%D1%80%D0%BE%D1%81%D0%BB%D0%B8%D0%BD%D0%B8.jpg?1597918545" alt="Продукт 1">
+                    <h3>Лікарська Трава</h3>
+                    <p>Ціна: 500 грн</p>
+                  </div>
+                  <div class="card" data-price="300" data-name="Лікарські трави">
+                    <img class="card-img" src="https://yaskravaklumba.com.ua/image/catalog/stativideo/Articles/lek-travy-2.jpg?1502225846659" alt="Продукт 2">
+                    <h3>Лікарська Трава</h3>
+                    <p>Ціна: 200 грн</p>  
+                  </div>
+                  <div class="card" data-price="550" data-name="Лікарські трави">
+                    <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdRUq1_QTn56GR9RyvZw4eu3wlon6u8seVOw&s" alt="Продукт 3">
+                    <h3>Лікарська Трава</h3>
+                    <p>Ціна: 250 грн</p>
+                  </div>
+            </div>
+            <div class="card-grid-container">
+                <div class="card" data-price="250" data-name="Лікарські трави">
+                    <img class="card-img" src="https://agro-business.com.ua/media/k2/items/cache/e9b01da3b9190a541f47e1a600f45f16_M.jpg" alt="Продукт 4">
+                    <h3>Лікарська Трава</h3>
+                    <p>Ціна: 250 грн</p>
+                  </div>
+                  <div class="card" data-price="900" data-name="Лікарські трави">
+                    <img class="card-img" src="https://agro-business.com.ua/media/k2/items/src/5b256c74fbe5df73f679b5046c062ae5.jpg" alt="Продукт 5">
+                    <h3>Лікарська Трава</h3>
+                    <p>Ціна: 900 грн</p>
+                  </div>
+                  <div class="card" data-price="600" data-name="Лікарські трави">
+                    <img class="card-img" src="https://kurkul.com/media/news/original/00/13/13371/shavlia-kurkul-31680.jpg" alt="Продукт 6">
+                    <h3>Лікарська Трава</h3>
+                    <p>Ціна: 100 грн</p>
+                  </div>
+            </div>
+            <div class="card-grid-container">
+                <div class="card" data-price="300" data-name="Лікарські трави">
+                    <img class="card-img" src="https://vesnodar.com.ua/image/cache/webp/catalog/products/semena-lekarstvennyh-trav-shalfeya-lekarstvennogo-700x700.webp" alt="Продукт 7">
+                    <h3>Лікарська Трава</h3>
+                    <p>Ціна: 300 грн</p>
+                  </div>
+                  <div class="card" data-price="800" data-name="Лікарські трави">
+                    <img class="card-img" src="https://travoznai.com.ua/wp-content/uploads/2023/12/4049-15385407_1261401987280205_6933254064652374387_o-1.jpg" alt="Продукт 8">
+                    <h3>Лікарська Трава</h3>
+                    <p>Ціна: 300 грн</p>
+                  </div>
+                  <div class="card" data-price="500" data-name="Лікарські трави">
+                    <img class="card-img" src="https://molbuk.ua/uploads/posts/2024-05/1715344517_lekarstvennye-travy-v-sadu-sozdaem-aptekarskij-ogorod-0.jpg" alt="Продукт 9">
+                    <h3>Лікарська Трава</h3>
+                    <p>Ціна: 500 грн</p>
+                  </div>
+          </div>
+        </div>
+        <div class="card-grid-container">
+            <div class="card" data-price="200" data-name="Лікарські трави">
+                <img class="card-img" src="https://exo.in.ua/files/userfiles/1/images/councils/2019/greens.jpg" alt="Продукт 1">
+                <h3>Лікарська Трава</h3>
+                <p>Ціна: 500 грн</p>
+              </div>
+              <div class="card" data-price="300" data-name="Лікарські трави">
+                <img class="card-img" src="https://yaskravaklumba.com.ua/image/catalog/stativideo/Articles/lek-travy-2.jpg?1502225846659" alt="Продукт 2">
+                <h3>Лікарська Трава</h3>
+                <p>Ціна: 200 грн</p>  
+              </div>
+              <div class="card" data-price="550" data-name="Лікарські трави">
+                <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdRUq1_QTn56GR9RyvZw4eu3wlon6u8seVOw&s" alt="Продукт 3">
+                <h3>Лікарська Трава</h3>
+                <p>Ціна: 250 грн</p>
+              </div>
+        </div>
+        <div class="card-grid-container">
+            <div class="card" data-price="250" data-name="Лікарські трави">
+                <img class="card-img" src="https://agro-business.com.ua/media/k2/items/cache/e9b01da3b9190a541f47e1a600f45f16_M.jpg" alt="Продукт 4">
+                <h3>Лікарська Трава</h3>
+                <p>Ціна: 250 грн</p>
+              </div>
+              <div class="card" data-price="900" data-name="Лікарські трави">
+                <img class="card-img" src="https://agro-business.com.ua/media/k2/items/src/5b256c74fbe5df73f679b5046c062ae5.jpg" alt="Продукт 5">
+                <h3>Лікарська Трава</h3>
+                <p>Ціна: 900 грн</p>
+              </div>
+              <div class="card" data-price="600" data-name="Лікарські трави">
+                <img class="card-img" src="https://kurkul.com/media/news/original/00/13/13371/shavlia-kurkul-31680.jpg" alt="Продукт 6">
+                <h3>Лікарська Трава</h3>
+                <p>Ціна: 100 грн</p>
+              </div>
+        </div>
+        <div class="card-grid-container">
+            <div class="card" data-price="300" data-name="Лікарські трави">
+                <img class="card-img" src="https://vesnodar.com.ua/image/cache/webp/catalog/products/semena-lekarstvennyh-trav-shalfeya-lekarstvennogo-700x700.webp" alt="Продукт 7">
+                <h3>Лікарська Трава</h3>
+                <p>Ціна: 300 грн</p>
+              </div>
+              <div class="card" data-price="800" data-name="Лікарські трави">
+                <img class="card-img" src="https://travoznai.com.ua/wp-content/uploads/2023/12/4049-15385407_1261401987280205_6933254064652374387_o-1.jpg" alt="Продукт 8">
+                <h3>Лікарська Трава</h3>
+                <p>Ціна: 300 грн</p>
+              </div>
+              <div class="card" data-price="500" data-name="Лікарські трави">
+                <img class="card-img" src="https://molbuk.ua/uploads/posts/2024-05/1715344517_lekarstvennye-travy-v-sadu-sozdaem-aptekarskij-ogorod-0.jpg" alt="Продукт 9">
+                <h3>Лікарська Трава</h3>
+                <p>Ціна: 500 грн</p>
+              </div>
+      </div>
+    </div>
+        </div>
+        
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <h2>Корзина</h2>
+                <ul id="cart-items">
+                </ul>
+                <button id="checkout-btn">Купити</button>
+                <button id="close-cart-btn">Закрити</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container2">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="./photo_2024-11-09_19-37-54-removebg-preview.png" alt="Логотип">
+                    <p>Лікарські трави - Ваш природний шлях до здоров'я. Пропонуємо тільки якісні та натуральні трави для вашого здоров'я.</p>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>© 2024 Лікарські трави. Всі права захищені.</p>
+            <div class="footer-section">
+                <h4>Контакти</h4>
+                <p>Телефон: +380 (XX) XXX-XX-XX</p>
+                <p>Email: info@herbs.com</p>
+                <p>Адреса: м. Київ, вул. Природи, 10</p>
+            </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
