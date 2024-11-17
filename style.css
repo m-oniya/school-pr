@@ -453,3 +453,55 @@ button:hover {
             font-size: 14px;
         }
     }
+    .main__container{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: 0 auto;
+        align-items: center;
+        margin-top: 50px;
+
+    }
+    .main__container--text{
+        display: flex;
+        flex-direction: column;
+        max-width: 1100px;
+        color: #6d7c62;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .main__container--text h3{
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+    .main__container--text p{
+
+    }
+    .map{
+        width: 500px;
+    }
+    .map__maps{
+        border-radius: 15px;
+    }
+    .contact-info-container{
+
+        p{
+            max-width: 500px;
+            color: #6d7c62;
+        }
+    }
+    @media (max-width: 1180px){
+        .main__container{
+            display: flex;
+            flex-direction: column;
+    
+        }
+        .map{
+            margin-bottom: 50px;
+        }
+    }
+    @media (max-width: 580px){
+        .map{
+            width: 300px;
+        }
+    }
